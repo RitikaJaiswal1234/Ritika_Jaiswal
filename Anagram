@@ -1,0 +1,23 @@
+ import java.util.*;
+ class anagra {
+	 
+	 public static void main(String[] args) {
+	 boolean status=false;
+	  String str1="palm";
+	  String str2="Lamp";
+		if(str1.length()==str2.length())
+		 {
+		char[] Arrays1=str1.toLowerCase().toCharArray();
+		char[] Arrays2=str2.toLowerCase().toCharArray();
+		Arrays.sort(Arrays1);
+		Arrays.sort(Arrays2);
+		if(Arrays.equals(Arrays1,Arrays2))
+		     status=true;
+		}
+	if(status) 
+		System.out.println(" Anagram");
+	
+	else 
+		System.out.println("not Anagram");
+}
+}
